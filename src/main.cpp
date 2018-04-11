@@ -45,6 +45,7 @@
 
 // Include custom images
 #include "images.h"
+#include "icons.h"
 
 // Initialize the OLED display using SPI
 // D5 -> CLK
@@ -166,7 +167,7 @@ void drawProgressBarDemo() {
 void drawImageDemo() {
     // see http://blog.squix.org/2015/05/esp8266-nodemcu-how-to-create-xbm.html
     // on how to create xbm files
-    display.drawXbm(34, 14, WiFi_Logo_width, WiFi_Logo_height, WiFi_Logo_bits);
+    display.drawXbm(34, 14, logo32x32_width, logo32x32_height, logo32x32_bits);
 }
 
 Demo demos[] = {drawFontFaceDemo, drawTextFlowDemo, drawTextAlignmentDemo, drawRectDemo, drawCircleDemo, drawProgressBarDemo, drawImageDemo};
